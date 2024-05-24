@@ -1,0 +1,746 @@
+/*GENERAL Y BÁSICO*/
+:root {
+    --background-color-text: white;
+    --principal-color: #ea80a4;
+    --secondary-color: #f3bacb;
+    --international-title-color: #ebdef0;
+    --international-color: #f5eef8;
+    --education-title-color: #d6eaf8;
+    --education-color: #ebf5fb;
+    --culture-title-color: #fae5d3;
+    --culture-color: #fdf2e9;
+    --tech-title-color: #d5f5e3;
+    --tech-color: #eafaf1;
+    --politics-title-color: #d6eaf8;
+    --politics-color: #ebf5fb;
+    --equality-title-color: #ebdef0;
+    --equality-color: #f5eef8;
+
+}
+
+* {
+    font-family: 'Sans serif';
+}
+
+
+body {
+    color: #343233;
+    background-color: #f4f6f6;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+/*MODO CLARO U OSCURO*/
+[data-theme='light'] {
+    background-color: #f4f6f6;
+    color: #343233;
+}
+
+[data-theme='dark'] {
+    background-color: #054466;
+    color: rgb(100, 100, 100);
+
+
+    .main,
+    .main-scroll {
+        background-color: #c9ebff;
+    }
+
+    .cabecera,
+    .cuerpo,
+    .pie {
+        color: rgb(100, 100, 100);
+    }
+}
+
+
+.modos {
+    grid-column: 1/2;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+#toggleMode {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to top, var(--principal-color), var(--secondary-color));
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+/*VOLVER ARRIBA*/
+.volver {
+    width: 75px;
+    position: fixed;
+    left: 100px;
+    bottom: 75px;
+    z-index: 2;
+}
+
+.volver img {
+    width: 75px;
+    height: auto;
+}
+
+
+
+
+/*CABECERA*/
+
+.cabecera .fechaAcceso,
+.cabecera .logoWeb {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cabecera .fechaAcceso {
+    text-align: left;
+    color: var(--principal-color);
+}
+
+.cabecera .fechaAcceso a {
+    text-align: right;
+    color: var(--principal-color);
+    font-size: 16px;
+}
+
+.cabecera .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: #f3bacb;
+    list-style-type: none;
+    text-align: center;
+}
+
+.cabecera .nav li {
+    float: left;
+    padding: 15px 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.cabecera .nav a {
+    width: 80%;
+    font-size: 16px;
+    color: #343233;
+    font-weight: bold;
+}
+
+.cabecera .nav li:hover {
+    transform: scale(1.1);
+    background-color: var(--principal-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*BREADCRUMB*/
+.breadcrumb {
+    list-style: none;
+    margin: -10px -20px 7px -25px;
+}
+
+.breadcrumb a {
+    padding: 10px 20px;
+    display: inline-block;
+    background: #ffdfe8;
+    transform: skew(-20deg);
+    cursor: pointer;
+    border: 1px solid var(--secondary-color);
+}
+
+.breadcrumb a.activo li {
+    color: #343233;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.breadcrumb a li {
+    font-size: 12px;
+    color: #343233;
+    display: block;
+    transform: skew(20deg);
+}
+
+.breadcrumb a:link,
+.breadcrumb a:visited {
+    text-decoration: none;
+    color: #343233;
+}
+
+.breadcrumb a:hover {
+    background-color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/*ASIDE*/
+#aside {
+    padding: 0 30px 0 20px;
+    margin: 320px 20px 20px;
+    height: 950px;
+    width: 21rem;
+    overflow: hidden;
+    background: linear-gradient(to top, var(--principal-color), var(--secondary-color));
+    border-radius: 30px;
+    box-shadow: 1px 1px 20px 2px lightgray;
+    text-align: center;
+    grid-column: 3/4;
+}
+
+#aside li {
+    text-align: left;
+}
+
+#aside h3 {
+    height: 55px;
+}
+
+#aside a {
+    text-decoration: none;
+    color: #343233;
+}
+
+/*CUERPO*/
+#internacional,
+#politica,
+#tecnologia,
+#cultura,
+#igualdad,
+#educacion {
+    padding: 1px 15px;
+}
+
+.main {
+    background-color: var(--background-color-text);
+    grid-column: 2/3;
+    border-radius: 15px;
+    font-size: 16px;
+    min-width: 1000px;
+}
+
+.main-scroll {
+    background-color: var(--background-color-text);
+    grid-column: 2/3;
+    border-radius: 15px;
+    font-size: 16px;
+    min-width: 70rem;
+    z-index: 1;
+}
+
+.main-scroll .cuerpo {
+    height: 840px;
+    overflow-y: scroll;
+    -ms-scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
+}
+
+.cuerpo {
+    text-align: center;
+}
+
+section {
+    height: 840px;
+    scroll-snap-align: start;
+}
+
+article {
+    padding: 5px 20px;
+}
+
+img+p {
+    text-align: left;
+}
+
+img,
+video {
+    width: auto;
+    height: 150px;
+    border-radius: 5px;
+}
+
+#imgPrincipal {
+    height: 270px;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/*INTERNACIONAL*/
+#internacional {
+    background-color: var(--international-title-color);
+}
+
+.grid-internacional {
+    background-color: var(--international-color);
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 30% 30% 40%;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-internacional p {
+    text-align: left;
+}
+
+
+.grid-internacional article:first-child {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    font-size: 22px;
+}
+
+.grid-internacional img,
+.grid-internacional video {
+    height: 75px;
+}
+
+
+/*EDUCACION*/
+#educacion {
+    background-color: var(--education-title-color);
+}
+
+.grid-2-5 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr 0.75fr;
+    text-align: center;
+    padding: 10px;
+}
+
+.educacion {
+    background-color: var(--education-color);
+}
+
+.educacion p {
+    text-align: left;
+}
+
+.noticia2 {
+    grid-column: 2/span 2;
+    grid-row: 1/2;
+}
+
+.noticia2-4 {
+    grid-column: 1/span 2;
+    grid-row: 2/3;
+}
+
+.noticia2-5 {
+    grid-column: 3/span 2;
+    grid-row: 2/3;
+}
+
+/*CULTURA*/
+#cultura {
+    background-color: var(--culture-title-color);
+}
+
+.grid-3-6 {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 1fr 0.75fr;
+    text-align: center;
+    padding: 10px;
+}
+
+.cultura {
+    background-color: var(--culture-color);
+
+}
+
+.cultura p {
+    text-align: left;
+}
+
+/*TECNOLOGIA*/
+#tecnologia {
+    background-color: var(--tech-title-color);
+}
+
+.grid-tecnologia {
+    background-color: var(--tech-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.75fr;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-teconologia p {
+    text-align: left;
+}
+
+.noticia4-1 {
+    grid-column: 1/span 3;
+    grid-row: 1/2;
+}
+
+.noticia4-4 {
+    grid-column: 2/span 2;
+    grid-row: 2/3;
+}
+
+/*POLITICA*/
+#politica {
+    background-color: var(--politics-title-color);
+}
+
+.grid-2-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.75fr;
+    text-align: center;
+}
+
+.politica {
+    background-color: var(--politics-color);
+
+}
+
+.politica p {
+    text-align: left;
+}
+
+/*IGUALDAD*/
+#igualdad {
+    background-color: var(--equality-title-color);
+}
+
+.grid-3-6 {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 1fr 0.75fr;
+    text-align: center;
+}
+
+.igualdad {
+    background-color: var(--equality-color);
+}
+
+.igualdad p {
+    text-align: left;
+}
+
+
+
+
+
+/*PAGINACION*/
+.paginacion {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.paginacion li {
+    display: inline;
+}
+
+.paginacion li a {
+    color: #343233;
+    float: left;
+    padding: 9px 18px;
+    text-decoration: none;
+    width: calc(100%/13);
+    font-weight: bold;
+}
+
+.paginacion li a.activo {
+    background-color: var(--secondary-color);
+    color: #343233;
+}
+
+.paginacion li a.activo:hover {
+    background-color: var(--principal-color);
+}
+
+.paginacion li a:hover:not(.activo) {
+    background-color: #ddd;
+}
+
+
+/*LOGIN*/
+.cuerpo .mainLog {
+    margin: auto;
+    height: 500px;
+    width: 700px;
+    padding: 25px 50px;
+    text-align: center;
+    box-shadow: 1px 1px 10px gray;
+    border-radius: 15px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+.cuerpo .mainLog .imagenLogin {
+    float: left;
+    text-align: center;
+    height: 400px;
+}
+
+.cuerpo .mainLog .imagenLogin img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 5%;
+}
+
+.cuerpo .mainLog .formLogin {
+    text-align: center;
+    height: 200px;
+    font-size: 30px;
+    padding: 25px;
+    line-height: 45px;
+    position: relative;
+    top: 10%;
+}
+
+.cuerpo .mainLog .formLogin input[type="submit"] {
+    background-color: var(--secondary-color);
+    font-size: 24px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-top: 40px;
+}
+
+.cuerpo .gmailFacebook {
+    margin: 75px 20px;
+    text-align: center;
+}
+
+.cuerpo .gmailFacebook button,
+.cuerpo .registroLogin button {
+    margin: 25px 50px 50px;
+    background-color: #ffd1dc;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.cuerpo .gmailFacebook a,
+.cuerpo .registroLogin a {
+    font-size: 16px;
+    color: #343233;
+}
+
+.cuerpo .registroLogin {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.cuerpo .formLogin input:hover,
+.cuerpo .gmailFacebook button:hover,
+.cuerpo .registroLogin button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/*REGISTRO*/
+.cuerpoCentral h4 {
+    text-align: center;
+}
+
+.cuerpoCentral {
+    line-height: 25px;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.cuerpoCentral .cuerpo {
+    box-shadow: 1px 1px 20px lightgray;
+    border-radius: 15px;
+    padding: 30px 20px 60px;
+    margin-top: 30px;
+    text-align: left;
+    background-color: white;
+}
+
+.cuerpoCentral .cuerpo1 {
+    width: 50%;
+    float: left;
+}
+
+.cuerpoCentral .cuerpo1 div,
+.cuerpoCentral .cuerpo2 div {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2.5fr;
+}
+
+.cuerpoCentral form .inputs {
+    padding: 20px;
+}
+
+.cuerpoCentral img {
+    width: 25px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.cuerpoCentral .opcionesPreferencias div {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
+}
+
+
+
+.cuerpoCentral .suscripcion {
+    box-shadow: 1px 1px 20px lightgray;
+    margin-top: 100px;
+    background-color: #ffe2e6;
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.cuerpoCentral .suscripcion img {
+    width: auto;
+    height: 250px;
+    margin: 20px 0;
+}
+
+.cuerpoCentral .suscripcion dl {
+    text-align: left;
+}
+
+.cuerpoCentral .suscripcion .selectSuscripcion {
+    margin-top: 50px;
+    text-align: center;
+    grid-column: 1/span 3;
+}
+
+#suscripcion {
+    background-color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.cuerpoCentral .normas {
+    margin: 25px 0;
+    padding: 15px;
+    text-align: justify;
+}
+
+.cuerpoCentral input[type="submit"] {
+    background-color: var(--principal-color);
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 15px;
+    margin-bottom: 100px;
+}
+
+.cuerpoCentral input[type="submit"]:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.normas {
+    height: 500px;
+    opacity: 0.3;
+    transition: opacity 1s linear;
+}
+
+.normas:hover {
+    opacity: 1;
+}
+
+
+/*FOOTER*/
+.pie {
+    display: grid;
+    grid-template-rows: 75% 25%;
+}
+
+.pie img {
+    width: 25px;
+    height: auto;
+}
+
+.pie .logoWeb img {
+    height: 100px;
+    width: auto;
+    padding-top: 10px;
+}
+
+.pie .contenidoPie {
+    display: grid;
+    grid-template-columns: 25% 40% 35%;
+    padding: 10px;
+    text-align: center;
+}
+
+.pie .contenidoPie .registro {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.pie .contenidoPie .registro a>button {
+    margin-top: 20px;
+    background-color: var(--secondary-color);
+    line-height: 30px;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+.pie .contenidoPie .registro button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.pie .contenidoPie .registro a {
+    font-size: 16px;
+    color: #343233;
+    line-height: 100%;
+}
+
+.pie .contenidoPie .iconos {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.pie .contenidoPie .iconos img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.pie .enlacesInteres {
+    display: grid;
+    grid-template-columns: 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8%;
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none;
+    height: 50px;
+}
+
+.pie .enlacesInteres a {
+    text-decoration: none;
+    color: #343233;
+}
+
+.pie .enlacesInteres li:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}

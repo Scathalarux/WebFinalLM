@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>La's News</title>
+  <script src="../JS/theme.js" async></script>
+  <link rel="icon" type="image/x-icon" href="image/logoWeb.png">
+  <link rel="stylesheet" href="css/proyecto.css">
+</head>
+
+<body>
+  <!--Botón para cambiar de modos claro-oscuro-->
+  <div class="modos">
+    <button id="toggleMode">Cambiar Modo</button>
+  </div>
+  <div class="main-scroll">
+    <div class="volver">
+      <a href="#"><img src="../image/flechaArriba.png"></a>
+    </div>
+    <!--Cabecera-->
+    <div class="cabecera">
+      <div class="fechaAcceso">
+        <div class="fecha">
+          <!--Fecha-->
+          <label>Fecha</label>
+          <input type="date" id="fecha" name="fecha" value="2024-05-30" readonly>
+        </div>
+        <!--Login/registro-->
+        <a href="user/login.html">Acceso</a>
+      </div>
+      <div class="logoWeb">
+        <!--Imagen-->
+        <a href="index.html"><img src="image/logoWeb.png" /></a>
+        <!--Nombre web-->
+        <h1>La's News</h1>
+      </div>
+      <div>
+        <!--Nav-->
+        <ul class="nav">
+          <a href="#Politica">
+            <li>Política</li>
+          </a>
+          <a href="#Internacional">
+            <li>Internacional</li>
+          </a>
+          <a href="#Tecnologia">
+            <li>Tecnología</li>
+          </a>
+          <a href="#Cultura">
+            <li>Cultura</li>
+          </a>
+          <a href="#Igualdad">
+            <li>Igualdad</li>
+          </a>
+          <a href="#Educacion">
+            <li>Educación</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <!--Cierre cabecera-->
+    <!--Breadcrumb-->
+    <div>
+      <ul class="breadcrumb index">
+        <a class="activo" href="index.html">
+          <li>Inicio</li>
+        </a>
+        <a href="user/login.html">
+          <li>Acceso</li>
+        </a>
+        <a href="user/register.html">
+          <li>Registro</li>
+        </a>
+      </ul>
+    </div>
+    <!--Cierre breadcrumb-->
+    <!--Principal-->
+    <div class="cuerpo">
+      <!--Volver arriba-->
+      <div class="volver">
+        <a href="#"><img src="image/flechaArriba.png"></a>
+      </div>
+      <!--Cierre volver arriba-->
+      <div>
+        <!--Seccion 1-->
+        <section>
+          <div id="internacional">
+            <a name="Internacional">
+              <h1>Internacional</h1>
+            </a>
+          </div>
+          <div class="grid-internacional">
+            <!--Noticia 1.1-->
+            <article>
+              <h3>Mejor Dev Web 2023: Lara Comesaña</h3>
+              <img id="imgPrincipal"
+                src="https://womenintech-awards.com/wordpress/wp-content/uploads/2023/06/Awards_CCA.png">
+              <p>Lara Comesaña ha recibido el premio a la mejor desarrolladora web 2023 de la mano de CCA Awards</p>
+              <a href="#">Continuar leyendo</a href="#">
+            </article>
+            <!--Noticia 1.2-->
+            <article>
+              <h2>Estados Unidos</h2>
+              <img
+                src="https://static.eldiario.es/clip/c4591d6c-41e5-4309-809e-07cab36d4b1e_16-9-discover-aspect-ratio_25p_0.webp">
+              <p>Un tribunal de EEUU insta a biden a que examine su "apoyo inquebrantable" a Israel</p>
+              <a href="#">Continuar leyendo</a href="#">
+            </article>
+            <!--Noticia 1.3-->
+            <article>
+              <h3>Argentina</h3>
+              <img
+                src="https://static.eldiario.es/clip/fb7d0aac-71e2-41ba-be80-ffd681299660_16-9-discover-aspect-ratio_default_0.webp">
+              <p>Milei quiere desmantelar la 'ley Micaela' sobre violencia de género mientras aumentan los feminicidos
+                en
+                Argentina</p>
+              <a href="#">Continuar leyendo</a href="#">
+            </article>
+            <!--Noticia 1.4-->
+            <article>
+              <h3>Chile</h3>
+              <img
+                src="https://static.eldiario.es/clip/dcbe7e73-e8af-4614-8894-3e77961b5706_16-9-discover-aspect-ratio_25p_0.webp">
+              <p>Chile sufre los peores incendios en décadas en plena ola de calor extremo bajo la amenaza del cambio
+                climático</p>
+              <a href="#">Continuar leyendo</a href="#">
+            </article>
+            <!--Noticia 1.5-->
+            <article>
+              <h3>El Salvador</h3>
+              <img
+                src="https://static.eldiario.es/clip/402ab10e-de3e-40ed-a1eb-622c1c09644d_16-9-discover-aspect-ratio_75p_0.webp">
+              <p>El descontrol en el recuento de las ellecciones inaugura el país de partido único de Bukele</p>
+              <a href="#">Continuar leyendo</a href="#">
+            </article>
+            <!--Noticia 1.6-->
+            <article>
+              <h3>Ucrania</h3>
+              <video controls autoplay muted>
+                <source src="video/videoGuerra.mp4" type="video/mp4">
+              </video>
+              <p>¿Un rival de Zelenski? Quién es Valeri Zaluzhni, el popular jefe del Ejército ucraniano</p>
+              <a href="#">Continuar leyendo</a href="#">
+            </article>
+          </div>
+        </section>
+        <!--Fin seccion 1-->
+
+
+        <!--Seccion 2-->
+        <section>
+          <div id="educacion">
+            <a name="Educacion">
+              <h1>Educación</h1>
+            </a>
+          </div>
+          <div class="grid-2-5 educacion">
+            <!--Noticia 2.1-->
+            <article>
+              <h3>Móvil en colegios</h3>
+              <img
+                src="https://static.eldiario.es/clip/99d38a1d-9daa-4490-93b2-d1a85a32e3b9_16-9-discover-aspect-ratio_default_0.webp">
+              <p>El Consejo Escolar del Estado acuerda prohibir el móvil en los colegios y limitarlo en lo institutos
+              </p>
+              <a
+                href="https://www.eldiario.es/sociedad/consejo-escolar-propone-prohibir-movil-primaria-limitarlo-secundaria_1_10865302.html">Continuar
+                leyendo</a href="">
+            </article>
+            <!--Noticia 2.2-->
+            <article class="noticia2">
+              <h2>Segregación por sexo</h2>
+              <img id="imgPrincipal"
+                src="https://static.eldiario.es/clip/c2304126-58f2-49da-8439-2ad99305444f_16-9-discover-aspect-ratio_default_0.webp">
+              <p>48 colegios siguen segregando por sexo con fondos públicos pese a que le prohíbe la ley de Educación
+              </p>
+              <a
+                href="https://www.eldiario.es/sociedad/48-colegios-siguen-segregando-sexos-fondos-publicos-pese-prohibe-ley-educacion_1_10883607.html">Continuar
+                leyendo</a>
+            </article>
+            <!--Noticia 2.3-->
+            <article>
+              <h3>Educación obligatoria</h3>
+              <img
+                src="https://static.eldiario.es/clip/f0651dbe-7090-4473-a693-6f26427a56f1_16-9-discover-aspect-ratio_default_0.webp">
+              <p>¿Debe la educación ser obligatoria hasta los 18 años? Sí, "pero más flexible"</p>
+              <a
+                href="https://www.eldiario.es/sociedad/debe-educacion-obligatoria-18-anos-si-sistema-flexible_1_10850527.html">Continuar
+                leyendo</a>
+            </article>
+            <!--Noticia 2.4-->
+            <article class="noticia2-4">
+              <h3>FP Privada</h3>
+              <img
+                src="https://static.eldiario.es/clip/f9f2c7f2-91f0-4105-9368-d9db573028af_16-9-discover-aspect-ratio_default_0.webp">
+              <p>La FP Privada acapara las prácticas en centros sanitarios y hace peligrar el título del alumnado de la
+                pública</p>
+              <a
+                href="https://www.eldiario.es/sociedad/fp-privada-acapara-practicas-centros-sanitarios-peligrar-titulo-alumnado-publica_1_10879876.html">Continuar
+                leyendo</a>
+            </article>
+            <!--Noticia 2.5-->
+            <article class="noticia2-5">
+              <h3>Inteligencia Artificial</h3>
+              <img
+                src="https://static.eldiario.es/clip/881f1fb8-d482-4dc0-9c03-0c4ba6c89261_16-9-discover-aspect-ratio_default_0.webp">
+              <p>Cuatro de diez familias han utilizado una Inteligencia Artificial para hacer tareas escolares</p>
+              <a
+                href="https://www.eldiario.es/sociedad/cuatro-diez-familias-han-utilizado-inteligencia-artificial-tareas-escolares_1_10874517.html">Continuar
+                leyendo</a>
+            </article>
+          </div>
+        </section>
+        <!--Fin seccion 2-->
+
+
+        <!--Seccion 3-->
+        <section>
+          <div id="cultura">
+            <a name="Cultura">
+              <h1>Cultura</h1>
+            </a>
+          </div>
+          <div class="grid-3-6 cultura">
+            <!--Noticia 3.1-->
+            <article>
+              <h3>Ministerio de cultura</h3>
+              <img
+                src="https://static.eldiario.es/clip/e66ab795-861d-434d-90e1-5662d153cfb6_16-9-discover-aspect-ratio_default_0_x2557y682.webp">
+              <p>El Ministerio de Cultura impulsará una unidad contra la violencia machista del sector</p>
+              <a
+                href="https://www.eldiario.es/cultura/ministerio-cultura-impulsara-unidad-violencia-machista-sector_1_10910864.html">Continuar
+                leyendo</a>
+            </article>
+            <!--Noticia 3.2-->
+            <article class="noticia2">
+              <h2>Los Goya</h2>
+              <img id="imgPrincipal"
+                src="https://static.eldiario.es/clip/229e208b-a331-4f25-bf25-acbba6e81881_16-9-discover-aspect-ratio_75p_0.webp">
+              <p>Almodóvar detiene los Goya para responder a Vox: “El dinero que recibimos lo devolvemos con creces”</p>
+              <a
+                href="https://www.eldiario.es/cultura/cine/almodovar-detiene-premios-goya-responder-vox-dinero-recibimos-devolvemos-creces_1_10914596.html">Continuar
+                leyendo</a>
+            </article>
+            <!--Noticia 3.3-->
+            <article>
+              <h3>Gabriela Mistral</h3>
+              <img
+                src="https://static.eldiario.es/clip/9b67d10a-dba8-435b-bad3-9cadcbe7971d_16-9-discover-aspect-ratio_75p_1089628.webp">
+              <p>La chilena mestiza y lesbiana a la que jamás se la pudo encajar en corriente alguna</p>
+              <a
+                href="https://www.eldiario.es/cultura/libros/gabriela-mistral-chilena-mestiza-lesbiana-pudo-encajar-corriente_1_10910499.html">Continuar
+                leyendo</a>
+            </article>
+            <!--Noticia 3.4-->
+            <article>
+              <h3>J.G. Ballard</h3>
+              <img
+                src="https://static.eldiario.es/clip/e4d80e02-c675-43ed-9515-90a208958108_16-9-discover-aspect-ratio_75p_0.webp">
+              <p>La sonrisa de Venus</p>
+              <a href="https://www.eldiario.es/cultura/sonrisa-venus_129_10911827.html">Continuar leyendo</a>
+            </article>
+            <!--Noticia 3.5-->
+            <article>
+              <h3>Streaming</h3>
+              <img
+                src="https://static.eldiario.es/clip/d8804ce5-58a9-4f45-9168-dce0bb2414d0_16-9-discover-aspect-ratio_75p_1089570.webp">
+              <p>Glenn McDonald, el alquimista de datos despedido por Spotify: “Es razonable temer a las empresas de la
+                cultura”</p>
+              <a
+                href="https://www.eldiario.es/cultura/musica/glenn-mcdonald-alquimista-datos-despedido-spotify-razonable-temer-empresas-cultura_1_10910071.html">Continuar
+                leyendo</a>
+            </article>
+          </div>
+        </section>
+        <!--Fin seccion 3-->
+
+
+        <!--Seccion 4-->
+        <section>
+          <div id="tecnologia">
+            <a name="Tecnologia">
+              <h1>Tecnología</h1>
+            </a>
+          </div>
+          <div class="grid-tecnologia">
+            <!--Noticia 4.1-->
+            <article class="noticia4-1">
+              <h2>Instagram y Ayuso</h2>
+              <img id="imgPrincipal"
+                src="https://static.eldiario.es/clip/415f9bf6-a28b-40db-850a-20beab03da9b_16-9-discover-aspect-ratio_75p_0.webp">
+              <p>El código Ayuso para ser la segunda más seguida de Instagram: más influencer que política y "ayusers"
+                para
+                el
+                trabajo sucio</p>
+              <a
+                href="https://www.eldiario.es/tecnologia/codigo-ayuso-segunda-seguida-instagram-influencer-politica-ayusers-trabajo-sucio_1_10885836.html">Continuar
+                leyendo</a>
+            </article>
+            <!--Noticia 4.2-->
+            <article>
+              <h3>Disney</h3>
+              <img
+                src="https://static.eldiario.es/clip/2dba55ab-d1a4-4e9f-8c43-6dd8c6a7d376_16-9-discover-aspect-ratio_75p_0.webp">
+              <p>Disney desembarca en la industria del videojuego invirtiendo 1500 millones en los creadores de Fortnite
+              </p>
+              <a
+                href="https://www.eldiario.es/tecnologia/disney-desembarca-industria-videojuego-invirtiendo-1-500-millones-creadores-fortnite_1_10907018.html">Continuar
+                leyendo</a>
+            </article>
+            <!--Noticia 4.3-->
+            <article>
+              <h3>Timo de Whatsapp</h3>
+              <img
+                src="https://static.eldiario.es/clip/29ed04d6-9521-4dc7-961c-3d81d17308a1_16-9-discover-aspect-ratio_75p_0.webp">
+              <p>Más de 60 detenidos en Málaga, Madrid y Cataluña por el tipo de Whatsapp del "hijo en apuros"</p>
+              <a
+                href="https://www.eldiario.es/tecnologia/60-detenidos-malaga-madrid-cataluna-timo-whatsapp-hijo-apuros_1_10904323.html">Continuar
+                leyendo</a>
+            </article>
+            <!--Noticia 4.4-->
+            <article class="noticia4-4">
+              <h3>Huelga contra Tesla</h3>
+              <img
+                src="https://static.eldiario.es/clip/0e80dd84-d006-4a64-8e54-017bb8b80532_16-9-discover-aspect-ratio_75p_0.webp">
+              <p>Ni un paso atrás ante Elon Musk en Suecia: la huelga contra Tesla ya es la más larga del país en 80
+                años
+              </p>
+              <a
+                href="https://www.eldiario.es/tecnologia/paso-elon-musk-suecia-huelga-tesla-larga-pais-80-anos_1_10886268.html">Continuar
+                leyendo</a>
+            </article>
+            <!--Noticia 4.5-->
+            <article>
+              <h3>Comunidad de Madrid</h3>
+              <img
+                src="https://static.eldiario.es/clip/b605efee-6d40-435b-8b08-fa4ec095d1d6_16-9-discover-aspect-ratio_75p_1023634.webp">
+              <p>La Comunidad de Madrid violó la privacidad de los ciudadanos con su web del certificado COVID</p>
+              <a
+                href="https://www.eldiario.es/tecnologia/comunidad-madrid-violo-privacidad-ciudadanos-web-certificado-covid_1_10895587.html">Continuar
+                leyendo</a>
+            </article>
+          </div>
+        </section>
+        <!--Fin seccion 4-->
+
+
+        <!--Seccion 5-->
+        <section>
+          <div id="politica">
+            <a name="Politica">
+              <h1>Política</h1>
+            </a>
+          </div>
+          <div class="grid-2-5 politica">
+            <!--Noticia 5.1-->
+            <article>
+              <h3>Fraude de las mascarillas</h3>
+              <img
+                src="https://static.eldiario.es/clip/7e2f78cd-9332-4bdb-982b-4924c7bf4ddf_16-9-discover-aspect-ratio_50p_0.webp">
+              <p>Ábalos asegur ano saber nada del fraude de las mascarilla sy el PP exige explicaciones a Sánchez</p>
+              <a
+                href="https://www.eldiario.es/politica/abalos-asegura-no-fraude-mascarillas-pp-exige-explicaciones-sanchez_1_10944595.html">Continuar
+                leyendo</a>
+            </article>
+            <!--Noticia 5.2-->
+            <article class="noticia2">
+              <h3>Amnistía</h3>
+              <img id="imgPrincipal"
+                src="https://static.eldiario.es/clip/8fe6a9d1-116e-4624-b8f3-73de5e654bc5_16-9-discover-aspect-ratio_50p_0.webp">
+              <p>Sánchez asegura que habrá amnistía y una legislatura de cuatro años: "Tengo todo el tiempo del mundo"
+              </p>
+              <a
+                href="https://www.eldiario.es/politica/sanchez-asegura-habra-amnistia-legislatura-cuatro-anos-tiempo-mundo_1_10943821.html">Continuar
+                leyendo</a>
+            </article>
+            <!--Noticia 5.3-->
+            <article>
+              <h3>Tsunami</h3>
+              <img
+                src="https://static.eldiario.es/clip/732402ab-54ec-471e-a610-0957649ffcc0_16-9-discover-aspect-ratio_50p_0.webp">
+              <p>Los fiscales del Supremo insisten en la imputación de Puigdemont por terrorismo en Tsunami: "Ostentaba
+                el
+                liderazgo absoluto"</p>
+              <a
+                href="https://www.eldiario.es/politica/fiscales-supremo-insisten-imputacion-puigdemont-terrorismo-tsunami-ostentaba-liderazgo-absoluto_1_10943170.html">Continuar
+                leyendo</a>
+            </article>
+            <!--Noticia 5.4-->
+            <article class="noticia2-4">
+              <h3>Sánchez y Feijóo</h3>
+              <img
+                src="https://static.eldiario.es/clip/b992a135-5976-4ac1-b8b5-314fb42b0b3a_16-9-discover-aspect-ratio_50p_0.webp">
+              <p>Sánchez señala a Feijóo como la persona que habló de indultar a Puigdemont y el líder del PP replica
+                con
+                el
+                resultado en Galicia</p>
+              <a
+                href="https://www.eldiario.es/politica/sanchez-senala-feijoo-persona-hablo-indultar-puigdemont-lider-pp-presume-resultado-galicia_1_10943164.html">Continuar
+                leyendo</a>
+            </article>
+            <!--Noticia 5.5-->
+            <article class="noticia2-5">
+              <h3>Protestas agrarias</h3>
+              <img
+                src="https://static.eldiario.es/clip/6f6b0c72-da17-404f-aec8-232cfa35c394_16-9-discover-aspect-ratio_50p_0.webp">
+              <p>Última hora sobre la actualidad política y las protestas agrarias, en directo</p>
+              <a
+                href="https://www.eldiario.es/politica/ultima-hora-actualidad-politica-protestas-agrarias-directo_6_10943040.html">Continuar
+                leyendo</a>
+            </article>
+          </div>
+        </section>
+        <!--Fin seccion 5-->
+
+
+        <!--Seccion 6-->
+        <section>
+          <div id="igualdad">
+            <a name="Igualdad">
+              <h1>Igualdad</h1>
+            </a>
+          </div>
+          <div class="grid-3-6 igualdad">
+            <!--Noticia 6.1-->
+            <article>
+              <h3>Aborto</h3>
+              <img
+                src="https://static.eldiario.es/clip/43f8c32f-322f-4e9b-8f38-fb634d57e44c_16-9-discover-aspect-ratio_50p_0.webp">
+              <p>Un congreso antiaborto con un juez del Supremo y el presidente del Colegio de Médicos de Madrid como
+                grandes
+                figuras</p>
+              <a
+                href="https://www.eldiario.es/sociedad/congreso-antiaborto-juez-supremo-presidente-colegio-medicos-madrid-grandes-figuras_1_10924536.html">Continuar
+                leyendo</a>
+            </article>
+            <!--Noticia 6.2-->
+            <article class="noticia2">
+              <h3>Carmen Calvo</h3>
+              <img id="imgPrincipal"
+                src="https://static.eldiario.es/clip/c8f8f0c3-de3e-448e-a261-ba1cb60a5169_16-9-discover-aspect-ratio_50p_0.webp">
+              <p>Carmen Calvo: "No soy tránsfoba, que es la palabra que les encanta a algunos para ya no debatir nada"
+              </p>
+              <a
+                href="https://www.eldiario.es/sociedad/carmen-calvo-no-transfoba-palabra-les-encanta-no-debatir_128_10930316.html">Continuar
+                leyendo</a>
+            </article>
+            <!--Noticia 6.3-->
+            <article>
+              <h3>Argentina</h3>
+              <img
+                src="https://static.eldiario.es/clip/6ff134a5-297b-4cda-a0bf-6c90aa5cc0e9_16-9-discover-aspect-ratio_50p_0.webp">
+              <p>Cecilia Moreau, diputada argentina: "No volveremos nunca más a la clandestinidad del aborto"</p>
+              <a
+                href="https://www.eldiario.es/internacional/cecilia-moreau-diputada-argentina-no-volveremos-clandestinidad-aborto_128_10923659.html">Continuar
+                leyendo</a>
+            </article>
+            <!--Noticia 6.4-->
+            <article>
+              <h3>Chefs españolas</h3>
+              <img
+                src="https://static.eldiario.es/clip/50fca5bf-4181-4983-bcf3-6a554f72b637_16-9-discover-aspect-ratio_50p_1089751.webp">
+              <p>Cómo doce chefs españolas han roto moldes en un sector "dominado por el ego de los hombres"</p>
+              <a
+                href="https://www.eldiario.es/illes-balears/sociedad/12-chefs-espanolas-han-roto-moldes-sector-dominado-ego-hombres_1_10916120.html">Continuar
+                leyendo</a>
+            </article>
+            <!--Noticia 6.5-->
+            <article>
+              <h3>Violencia obstétrica</h3>
+              <img
+                src="https://static.eldiario.es/clip/3447b8cb-9dfb-45fa-9e67-119cf4ec936a_16-9-discover-aspect-ratio_50p_0.webp">
+              <p>Un documental para recordar lso inicio del activismo contra la violencia obstétrica: "Nos miraban como
+                con
+                asco"</p>
+              <a
+                href="https://www.eldiario.es/nidos/documental-recordar-inicios-activismo-violencia-obstetrica-miraban-asco_1_10924900.html">Continuar
+                leyendo</a>
+            </article>
+          </div>
+        </section>
+      </div>
+      <!--Fin seccion 6-->
+    </div>
+    <div class="paginacion">
+      <ul>
+        <li><a href="#">
+            << </a>
+        </li>
+        <li><a class="activo" href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">>></a></li>
+      </ul>
+    </div>
+    <!--Cierre pricipal-->
+
+    <!--Footer-->
+    <div class="pie">
+      <div class="contenidoPie">
+        <div class="logoWeb">
+          <!--Imagen Logo-->
+          <a href="#"><img src="image/logoWeb.png" /></a>
+          <h1>La's News</h1>
+        </div>
+        <div>
+          <!--Invitacion registro-->
+          <div class="registro">
+            <p>Necesitamos tu apoyo económico para hacer un periodismo riguroso y con valores sociales</p>
+            <a href="user/register.html"><button>Hazte socio, Hazte socia, Hazte socie</button></a>
+          </div>
+        </div>
+        <div class="iconos">
+          <!--Enlaces aplicaciones-->
+          <div class="apps">
+            <p>Descubre nuestras apps</p>
+            <a href="#"><img src="image/Android.png" /></a>
+            <a href="#"><img src="image/Apple.png" /></a>
+          </div>
+          <div class="redesSociales">
+            <p>Visita también nuestars redes</p>
+            <a href="#"><img src="image/Facebook.png" /></a>
+            <a href="#"><img src="image/Twitter.png" /></a>
+            <a href="#"><img src="image/instagram.png" /></a>
+            <a href="#"><img src="image/mastodon.png" /></a>
+            <a href="#"><img src="image/whatsapp.png" /></a>
+            <a href="#"><img src="image/telegram.png" /></a>
+            <a href="#"><img src="image/tiktok.png"></a>
+            <a href="#"><img src="image/rss.png"></a>
+          </div>
+        </div>
+      </div>
+      <!--Enlaces de informacion-->
+      <div>
+        <ul class="enlacesInteres">
+          <li><a href="#">Qué es La's News</a></li>
+          <li><a href="#">El equipo</a></li>
+          <li><a href="#">Estatuto de La's News</a></li>
+          <li><a href="#">Creative Commons</a></li>
+          <li><a href="#">Aviso legal</a></li>
+          <li><a href="#">Polítia de privacidad</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Mis cookies</a></li>
+          <li><a href="#">Política de cookies</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Revista</a></li>
+          <li><a href="#">Mastodon</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--Cierre footer-->
+  </div>
+
+  <!--Aside-->
+  <div id="aside">
+    <h3>¿Qué comer hoy?</h3>
+    <img src="https://cdn.recetasderechupete.com/wp-content/uploads/2018/03/Shakshuka-400x274.jpg">
+    <h3>Shakshuka</h3>
+    <audio controls muted>
+      <source src="audio/for-food-99185.mp3" type="audio/mp3">
+    </audio>
+    <p>Huevos con salsa de tomate, receta tradicional de la cocina magrebí</p>
+    <p>Fácil - 40 min</p>
+    <p>Ingredientes:</p>
+    <ul>
+      <li>3 cebollas grandes</li>
+      <li>2 pimientos rojos</li>
+      <li>2 dientes de ajo</li>
+      <li>6 tomates duros</li>
+      <li>2 cdtas de azúcar moreno</li>
+      <li>2 hojas de laurel</li>
+      <li>2 cdtas de perejil fresco</li>
+      <li>1/2 cda de semillas de comino</li>
+      <li>1/2 cda de tomillo</li>
+      <li>2 cayenas</li>
+      <li>75ml de aceite de oliva virgen extra</li>
+      <li>1 cdtas de pimentón</li>
+      <li>8 huevos</li>
+      <li>Sal, pimienta, pizca hebras de azafrán</li>
+    </ul>
+    <p>¿Lo tienes todo?</p>
+    <a href="https://www.abc.es/recetasderechupete/shakshuka-o-huevos-rancheros-en-salsa-de-tomate/7005/"
+      target="_blank">Lee aquí la
+      receta completa</a>
+  </div>
+  <!--Cierre aside-->
+</body>
+
+</html>

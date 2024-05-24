@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>La's News</title>
+    <script src="/JS/theme.js" async></script>
+    <link rel="icon" type="image/x-icon" href="../image/logoWeb.png">
+    <link rel="stylesheet" href="../css/proyecto.css">
+</head>
+
+<body>
+    <!--Botón para cambiar de modos claro-oscuro-->
+    <div class="modos">
+        <button id="toggleMode">Cambiar modo</button>
+    </div>
+    <div class="main">
+        <!--Cabecera-->
+        <div class="cabecera">
+            <div class="volver">
+                <a href="#"><img src="../image/flechaArriba.png"></a>
+            </div>
+            <div class="fechaAcceso">
+                <div class="fecha">
+                    <!--Fecha-->
+                    <label>Fecha</label>
+                    <input type="date" id="fecha" name="fecha" value="2024-05-30" readonly>
+                </div>
+                <!--Login/registro-->
+                <a href="login.html">Acceso</a>
+            </div>
+            <div class="logoWeb">
+                <!--Imagen-->
+                <a href="../index.html"><img src="../image/logoWeb.png" /></a>
+                <!--Nombre web-->
+                <h1>La's News</h1>
+            </div>
+            <div>
+                <!--Nav-->
+                <ul class="nav">
+                    <a href="#Politica">
+                        <li>Política</li>
+                    </a>
+                    <a href="#Internacional">
+                        <li>Internacional</li>
+                    </a>
+                    <a href="#Tecnologia">
+                        <li>Tecnología</li>
+                    </a>
+                    <a href="#Cultura">
+                        <li>Cultura</li>
+                    </a>
+                    <a href="#Igualdad">
+                        <li>Igualdad</li>
+                    </a>
+                    <a href="#Educacion">
+                        <li>Educación</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <!--Cierre cabecera-->
+        <div>
+            <ul class="breadcrumb registro">
+                <a href="../index.html">
+                    <li>Inicio</li>
+                </a>
+                <a href="login.html">
+                    <li>Acceso</li>
+                </a>
+                <a class="activo" href="register.html">
+                    <li>Registro</li>
+                </a>
+            </ul>
+        </div>
+        <!--Principal-->
+        <div class="cuerpoCentral">
+            <h4><i>¡Hazte socia, socio, socie y únete a esta sociedad que intentar bien informada!</i></h4>
+            <form action="login.html" method="get">
+                <div class="cuerpo">
+                    <h4>Datos Personales</h4>
+                    <div class="cuerpo1">
+                        <div class="inputs">
+                            <img title="Usuario" src="../image/personaIcono.webp">
+                            <label for="nombreApellidos">Nombre y Apellidos:</label>
+                            <textarea name="nombreApellidos" id="nombreApellidos"
+                                placeholder="Introduzca aquí su nombre y apellidos..." rows="1" cols="33"></textarea>
+                        </div>
+                        <div class="inputs">
+                            <img title="Usuario" src="../image/personaIcono.webp">
+                            <label for="genero">Género:</label>
+                            <div>
+                                <input type="radio" name="genero" value="1" />
+                                <label for="genero">Hombre</label><br />
+                                <input type="radio" name="genero" value="2" />
+                                <label for="genero">Mujer</label><br />
+                                <input type="radio" name="genero" value="3" />
+                                <label for="genero">Otro:</label>
+                                <textarea name="otro" id="otro" placeholder="Especifique aquí..." rows="1"
+                                    cols="20"></textarea>
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <img title="Email" src="../image/sobre.png">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="inputs">
+                            <img title="Email" src="../image/candado.png">
+                            <label for="contraseña">Contraseña:</label>
+                            <input type="password" id="contraseña" name="contraseña" required>
+                        </div>
+                        <div class="inputs">
+                            <img title="Email" src="../image/candado.png">
+                            <label for="contraseña">Repite la contraseña:</label>
+                            <input type="password" id="contraseña" name="contraseña" required>
+                        </div>
+                        <div class="inputs">
+                            <img title="Usuario" src="../image/personaIcono.webp">
+                            <label for="dni">DNI:</label>
+                            <input type="text" maxlength="9">
+                        </div>
+                        <div class="inputs">
+                            <img title="Usuario" src="../image/personaIcono.webp">
+                            <label for="dni">Fotocopia DNI:</label>
+                            <input type="file" name="dni" id="dni">
+                        </div>
+                        <div class="inputs">
+                            <img title="Foto de Perfil" src="../image/personaIcono.webp">
+                            <label for="fotoPerfil">Foto perfil:</label>
+                            <input type="file" id="fotoPerfil" name="fotoPerfil">
+                        </div>
+                    </div>
+                    <div class="cuerpo2">
+                        <div class="inputs">
+                            <img title="Fecha de Nacimiento" src="../image/calendario.png">
+                            <label for="anioNac">Año de Nacimiento:</label>
+                            <input type="number" id="anioNac" name="anioNac" min="1900" max="2006">
+                        </div>
+                        <div class="inputs">
+                            <img title="Teléfono" src="../image/LG1.png">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        <div class="inputs">
+                            <img title="Direccion" src="../image/casa.png">
+                            <label for="direccion">Dirección:</label>
+                            <input type="text" id="direccion" name="direccion">
+                        </div>
+                        <div class="inputs">
+                            <img title="Direccion" src="../image/casa.png">
+                            <label for="cp">CP:</label>
+                            <input type="text" id="cp" name="cp" minlength="4" maxlength="5">
+                        </div>
+                        <div class="inputs">
+                            <img title="Direccion" src="../image/ubicacion.png">
+                            <label for="poblacion">Población:</label>
+                            <input type="text" id="poblacion" name="poblacion">
+                        </div>
+                        <div class="inputs">
+                            <img title="Direccion" src="../image/ubicacion.png">
+                            <label for="provincia">Provincia:</label>
+                            <input list="provincia" name="provincia" />
+                            <datalist id="provincia">
+                                <option value="A Coruña"></option>
+                                <option value="Pontevedra"></option>
+                                <option value="Ourense"></option>
+                                <option value="Lugo"></option>
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <img title="secPreferidas" src="../image/estrella.png">
+                        <label for="seccion">Secciones preferidas:</label><br />
+                        <div class="opcionesPreferencias">
+                            <div>
+                                <input type="checkbox" name="politica" value="1" />
+                                <label for="1">Política</label>
+                                <input type="checkbox" name="internacional" value="2" />
+                                <label for="2">Internacional</label>
+                                <input type="checkbox" name="tecnologia" value="3" />
+                                <label for="3">Tecnología</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="cultura" value="4" />
+                                <label for="4">Cultura</label>
+                                <input type="checkbox" name="igualdad" value="5" />
+                                <label for="5">Igualdad</label>
+                                <input type="checkbox" name="educacion" value="6" />
+                                <label for="6">Educación</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <img title="observaciones" src="../image/observaciones.png">
+                        <label for="seccion">Observaciones:</label>
+                        <textarea name="observaciones" id="observaciones" placeholder="Escriba aquí..."
+                            cols="34"></textarea>
+                    </div>
+                </div>
+                <div class="suscripcion">
+                    <div class="cuotaDiaria">
+                        <h3>Cuota diaria</h3>
+                        <span>1€</span><br />
+                        <img src="../image/adultoLeyendo.png"> <br />
+                        <i>QUÉ INCLUYE</i>
+                        <dl>
+                            <dt>✔ Acceso ilimitado a todos los contenidos</dt>
+                            <dd>- Inlcuye artículos exclusivos de Opinión</dd>
+                            <dt>✔ Boletín personal de Lara CV</dt>
+                            <dd>- Fundadora y directora del periódico digital La's News</dd>
+                            <dt>✔ Sin publicidad</dt>
+                            <dd>- Olvídate de esas molestas ventanas que interrumpen tu lectura</dd>
+                            <dt>✔ Adelanto diario de noticias</dt>
+                            <dd>- Así podrás estar bien informade</dd>
+                            <dt>✔ Invitaciones a eventos</dt>
+                            <dd>- ¡No te los pierdas!</dd>
+                            <dt>✔ Revista La's News en digital</dt>
+                            <dd>- Llévatela siempre en el bolsillo</dd>
+                        </dl>
+                    </div>
+                    <div class="cuotaTrimestral">
+                        <h3>Cuota trimestral</h3>
+                        <span>3€</span><br />
+                        <img src="../image/adultoLeyendo2.png"><br />
+                        <i>QUÉ INCLUYE</i>
+                        <dl>
+                            <dt>✔ Acceso ilimitado a todos los contenidos</dt>
+                            <dd>- Inlcuye artículos exclusivos de Opinión</dd>
+                            <dt>✔ Boletín personal de Lara CV</dt>
+                            <dd>- Fundadora y directora del periódico digital La's News</dd>
+                            <dt>✔ Sin publicidad</dt>
+                            <dd>- Olvídate de esas molestas ventanas que interrumpen tu lectura</dd>
+                            <dt>✔ Adelanto diario de noticias</dt>
+                            <dd>- Así podrás estar bien informade</dd>
+                            <dt>✔ Invitaciones a eventos</dt>
+                            <dd>- ¡No te los pierdas!</dd>
+                            <dt>✔ Revista La's News en digital</dt>
+                            <dd>- Llévatela siempre en el bolsillo</dd>
+                        </dl>
+                    </div>
+                    <div class="cuotaAnual">
+                        <h3>Cuota anual</h3>
+                        <span>10€</span><br />
+                        <img src="../image/adultoLeyendo3.jpg"><br />
+                        <i>QUÉ INCLUYE</i>
+                        <dl>
+                            <dt>✔ Acceso ilimitado a todos los contenidos</dt>
+                            <dd>- Inlcuye artículos exclusivos de Opinión</dd>
+                            <dt>✔ Boletín personal de Lara CV</dt>
+                            <dd>- Fundadora y directora del periódico digital La's News</dd>
+                            <dt>✔ Sin publicidad</dt>
+                            <dd>- Olvídate de esas molestas ventanas que interrumpen tu lectura</dd>
+                            <dt>✔ Adelanto diario de noticias</dt>
+                            <dd>- Así podrás estar bien informade</dd>
+                            <dt>✔ Invitaciones a eventos</dt>
+                            <dd>- ¡No te los pierdas!</dd>
+                            <dt>✔ Revista La's News en digital</dt>
+                            <dd>- Llévatela siempre en el bolsillo</dd>
+                        </dl>
+                    </div>
+                    <div class="selectSuscripcion">
+                        <select id="suscripcion" name="suscripcion">
+                            <option value="diaria">Suscripción diaria</option>
+                            <option value="mensual">Suscripción mensual</option>
+                            <option value="anual" selected="selected">Suscripción anual</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="normas">
+                    <h3>Normas</h3>
+                    <ol type="1">
+                        <li>Respeta la identidad propia, las experiencias y la personalidad de los demás. Todos
+                            los
+                            tipos de personalidad son bienvenidos aquí, siempre que respeten y no dañen a los demás.
+                            Al mismo tiempo, ten en cuenta que los demás pueden cometer errores o utilizar una
+                            terminología diferente a la tuya.</li>
+                        <li>Racismo, machismo, capacitismo, homofobia, transfobia, queerfobia, xenofobia,
+                            antisemitismo, islamofobia y supremacismo blanco suponen bloqueo inmediato y, en caso de
+                            que los administradores consideren que esta conducta puede ser delictiva, una denuncia
+                            inmediata a las autoridades.</li>
+                        <li>Se bloqueará inmediatamente a toda persona o dominio que implícita o explícitamente
+                            difunda retórica fascista, nazi, franquista, de extrema derecha y otras formas de
+                            nacionalismo violento o excluyente. En caso de detectar un posible delito de odio los
+                            administradores contactarán con las autoridades.</li>
+                        <li>Se bloqueará a toda cuenta o dominio que comparta enlaces o material multimedia
+                            violento
+                            o que promueva la violencia. Los administradores se reservan el derecho a informar a las
+                            autoridades en caso de que encuentren indicios de actividad delictiva.</li>
+                        <li>Se bloqueará a toda cuenta o dominio que promueva conductas lesivas para la salud como
+                            el consumo y distribución de drogas, los trastornos de alimentación, las autolesiones,
+                            el
+                            suicidio, la ludopatía y la apología de conductas dañinas para la salud física y mental
+                            de
+                            la persona en general.</li>
+                    </ol>
+                    <input type="checkbox" name="aceptarNormas" value="1" required />
+                    <label for="1">Aceptar las normas</label>
+                </div>
+                <input type="submit" value="Finalizar el registro">
+
+            </form>
+        </div>
+        <!--Cierre pricipal-->
+
+        <!--Footer-->
+        <div class="pie">
+            <div class="contenidoPie">
+                <div class="logoWeb">
+                    <!--Imagen Logo-->
+                    <a href="../index.html"><img src="../image/logoWeb.png" /></a>
+                    <h1>La's News</h1>
+                </div>
+                <div>
+                    <!--Invitacion registro-->
+                    <div class="registro">
+                        <p>Necesitamos tu apoyo económico para hacer un periodismo riguroso y con valores sociales</p>
+                        <a href="register.html"><button>Hazte socio, Hazte socia, Hazte socie</button></a>
+                    </div>
+                </div>
+                <div class="iconos">
+                    <!--Enlaces aplicaciones-->
+                    <div class="apps">
+                        <p>Descubre nuestras apps</p>
+                        <a href="#"><img src="../image/Android.png" /></a>
+                        <a href="#"><img src="../image/Apple.png" /></a>
+                    </div>
+                    <div class="redesSociales">
+                        <p>Visita también nuestars redes</p>
+                        <a href="#"><img src="../image/Facebook.png" /></a>
+                        <a href="#"><img src="../image/Twitter.png" /></a>
+                        <a href="#"><img src="../image/instagram.png" /></a>
+                        <a href="#"><img src="../image/mastodon.png" /></a>
+                        <a href="#"><img src="../image/whatsapp.png" /></a>
+                        <a href="#"><img src="../image/telegram.png" /></a>
+                        <a href="#"><img src="../image/tiktok.png"></a>
+                        <a href="#"><img src="../image/rss.png"></a>
+                    </div>
+                </div>
+            </div>
+            <!--Enlaces de informacion-->
+            <div>
+                <ul class="enlacesInteres">
+                    <li><a href="#">Qué es La's News</a></li>
+                    <li><a href="#">El equipo</a></li>
+                    <li><a href="#">Estatuto de La's News</a></li>
+                    <li><a href="#">Creative Commons</a></li>
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Polítia de privacidad</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Mis cookies</a></li>
+                    <li><a href="#">Política de cookies</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Revista</a></li>
+                    <li><a href="#">Mastodon</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Cierre footer-->
+    </div>
+
+</body>
+
+</html>

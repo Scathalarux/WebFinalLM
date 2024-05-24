@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>La's News</title>
+  <script src="/JS/theme.js" async></script>
+  <link rel="icon" type="image/x-icon" href="../image/logoWeb.png">
+  <link rel="stylesheet" href="../css/proyecto.css">
+</head>
+
+<body>
+  <!--Botón para cambiar de modos claro-oscuro-->
+  <div class="modos">
+    <button id="toggleMode">Cambiar Modo</button>
+  </div>
+  <div class="main">
+    <!--Cabecera-->
+    <div class="cabecera">
+      <div class="volver">
+        <a href="#"><img src="../image/flechaArriba.png"></a>
+      </div>
+      <div class="fechaAcceso">
+        <div class="fecha">
+          <!--Fecha-->
+          <label>Fecha</label>
+          <input type="date" id="fecha" name="fecha" value="2024-05-30" readonly>
+        </div>
+        <!--Login/registro-->
+        <a href="register.html">Regrístrate</a>
+      </div>
+      <div class="logoWeb">
+        <!--Imagen-->
+        <a href="../index.html"><img src="../image/logoWeb.png" /></a>
+        <!--Nombre web-->
+        <h1>La's News</h1>
+      </div>
+      <div>
+        <!--Nav-->
+        <ul class="nav">
+          <a href="#Politica">
+            <li>Política</li>
+          </a>
+          <a href="#Internacional">
+            <li>Internacional</li>
+          </a>
+          <a href="#Tecnologia">
+            <li>Tecnología</li>
+          </a>
+          <a href="#Cultura">
+            <li>Cultura</li>
+          </a>
+          <a href="#Igualdad">
+            <li>Igualdad</li>
+          </a>
+          <a href="#Educacion">
+            <li>Educación</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <!--Cierre cabecera-->
+    <div>
+      <ul class="breadcrumb login">
+        <a href="../index.html"><li>Inicio</li></a>
+        <a class="activo" href="login.html"><li>Acceso</li></a>
+        <a href="register.html"><li>Registro</li></a>
+      </ul>
+    </div>
+    <!--Principal-->
+    <div class="cuerpo">
+      <div class="mainLog">
+        <h2>Login - Inicio de sesión</h2>
+        <div class="imagenLogin">
+          <img src="../image/login.png" />
+        </div>
+        <div class="formLogin">
+          <form action="../index.html" method="get">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+            <br />
+            <label for="email">Contraseña:</label>
+            <input type="password" name="password" id="password" />
+            <br />
+            <input type="submit" value="Acceder" />
+          </form>
+        </div>
+      </div>
+      <div class="gmailFacebook">
+        <a href="https://www.google.com/intl/es/gmail/about/" target="_blank"><button>Acceder a tu cuenta de
+            Google</button></a>
+        <a href="https://www.facebook.com/" target="_blank"><button>
+            Acceder a tu cuenta de Facebook</button></a>
+      </div>
+      <div class="registroLogin">
+        <h2>¿Aún no estás registrado?</h2>
+        <a href="register.html" target="_blank"><button>Regístrate aquí</button></a>
+      </div>
+    </div>
+    <!--Cierre pricipal-->
+    <!--Footer-->
+    <div class="pie">
+      <div class="contenidoPie">
+        <div class="logoWeb">
+          <!--Imagen Logo-->
+          <a href="../index.html"><img src="../image/logoWeb.png" /></a>
+          <h1>La's News</h1>
+        </div>
+        <div>
+          <!--Invitacion registro-->
+          <div class="registro">
+            <p>Necesitamos tu apoyo económico para hacer un periodismo riguroso y con valores sociales</p>
+            <a href="register.html"><button>Hazte socio, Hazte socia, Hazte socie</button>
+          </div></a>
+        </div>
+        <div class="iconos">
+          <!--Enlaces aplicaciones-->
+          <div class="apps">
+            <p>Descubre nuestras apps</p>
+            <a href="#"><img src="../image/Android.png" /></a>
+            <a href="#"><img src="../image/Apple.png" /></a>
+          </div>
+          <div class="redesSociales">
+            <p>Visita también nuestars redes</p>
+            <a href="#"><img src="../image/Facebook.png" /></a>
+            <a href="#"><img src="../image/Twitter.png" /></a>
+            <a href="#"><img src="../image/instagram.png" /></a>
+            <a href="#"><img src="../image/mastodon.png" /></a>
+            <a href="#"><img src="../image/whatsapp.png" /></a>
+            <a href="#"><img src="../image/telegram.png" /></a>
+            <a href="#"><img src="../image/tiktok.png"></a>
+            <a href="#"><img src="../image/rss.png"></a>
+          </div>
+        </div>
+      </div>
+      <!--Enlaces de informacion-->
+      <div>
+        <ul class="enlacesInteres">
+          <li><a href="#">Qué es La's News</a></li>
+          <li><a href="#">El equipo</a></li>
+          <li><a href="#">Estatuto de La's News</a></li>
+          <li><a href="#">Creative Commons</a></li>
+          <li><a href="#">Aviso legal</a></li>
+          <li><a href="#">Polítia de privacidad</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Mis cookies</a></li>
+          <li><a href="#">Política de cookies</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Revista</a></li>
+          <li><a href="#">Mastodon</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--Cierre footer-->
+  </div>
+
+</body>
+
+</html>
