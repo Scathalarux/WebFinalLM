@@ -31,7 +31,6 @@ body {
     font-size: 16px;
     box-sizing: border-box;
     transition: background-color 0.3s, color 0.3s;
-
 }
 
 /*MODO CLARO U OSCURO*/
@@ -436,46 +435,6 @@ a {
     text-align: left;
 }
 
-
-
-
-
-/*PAGINACION*/
-.paginacion {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    width: 100%;
-}
-
-.paginacion li {
-    display: inline;
-}
-
-.paginacion li a {
-    color: #343233;
-    float: left;
-    padding: 9px 18px;
-    text-decoration: none;
-    width: calc(100%/13);
-    font-weight: bold;
-}
-
-.paginacion li a.activo {
-    background-color: var(--secondary-color);
-    color: #343233;
-}
-
-.paginacion li a.activo:hover {
-    background-color: var(--principal-color);
-}
-
-.paginacion li a:hover:not(.activo) {
-    background-color: #ddd;
-}
-
-
 /*LOGIN*/
 .cuerpo .mainLog {
     margin: auto;
@@ -665,6 +624,47 @@ a {
 .normas:hover {
     opacity: 1;
 }
+
+
+
+
+
+/*PAGINACION*/
+.paginacion {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.paginacion li {
+    display: inline;
+}
+
+.paginacion li a {
+    color: #343233;
+    float: left;
+    padding: 9px 18px;
+    text-decoration: none;
+    width: calc(100%/13);
+    font-weight: bold;
+}
+
+.paginacion li a.activo {
+    background-color: var(--secondary-color);
+    color: #343233;
+}
+
+.paginacion li a.activo:hover {
+    background-color: var(--principal-color);
+}
+
+.paginacion li a:hover:not(.activo) {
+    background-color: #ddd;
+}
+
+
 
 
 /*FOOTER*/
